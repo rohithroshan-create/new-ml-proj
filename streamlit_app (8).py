@@ -112,8 +112,8 @@ reg_pipeline = load_model("rf_regressor_pipeline.pkl")
 
 # --- Module 2 & 3 Models (From your original app) ---
 prophet_model = None # Prophet models are trained on the fly
-churn_model = load_model("churn_model.pkl")
-supplier_model = load_model("supplier_model.pkl")
+churn_model = load_model("catboost_customer_churn.pkl")
+supplier_model = load_model("catboost_supplier_reliability.pkl")
 
 # ========== TABS ==========\
 tab1, tab2, tab3, tab4 = st.tabs([
